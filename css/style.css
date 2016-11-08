@@ -7,6 +7,20 @@ body {
   padding-top: 50px;
 }
 
+/* For the sidebar menu buttons */
+.nav > li > a {
+    padding: 7px 15px;
+    display: block;
+}
+
+.nav > .sidebar-title {
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
 
 /*
  * Global add-ons
