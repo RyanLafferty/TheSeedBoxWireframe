@@ -95,6 +95,23 @@ body {
   }
 }
 
+.login {
+    margin: auto;
+    width: 50%;
+    padding: 200px;
+    text-align: center;
+}
+
+.login-text-field {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.login-btn {
+    margin-top: 10px;
+}
+
 
 /*
  * Placeholder dashboard ideas
