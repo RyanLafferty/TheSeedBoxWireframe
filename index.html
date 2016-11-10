@@ -1,8 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <!-- generic meta -->
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -21,29 +19,42 @@
     <link href="css/fontawesome.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
-
 </head>
-
 <body>
-
-  <div class="login">
-      <img src="./res/images/TheSeed-tagline_long-padding.png" alt="HTML5 Icon" style="width:256px;height:128px;">
-      <input type="text" class="form-control login-text-field" placeholder="Username" id="user-field">
-      <input type="password" class="form-control login-text-field" placeholder="Password" id="pass-field">
-      <button type="button" class="btn btn-secondary login-btn" id="login-btn"><a href="home.html">Login</a></button>
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-dark navbar-fixed-top bg-inverse">
+      <a class="navbar-brand" href="#">The Seed</a>
+    </nav>
+  <div class="container">
+    <div class="login">
+        <img src="./res/images/TheSeed-tagline_long-padding.png" alt="HTML5 Icon" style="width:256px;height:128px;">
+        <form action="home.html" method="post" class="lead">
+            <input type="hidden" value="login" name="type" id="type">
+            <div class="form-group">
+                <label for="username">Email Address</label>
+                <input type="email" autofocus="" required="" maxlength="255" name="username" id="username" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" required="" maxlength="255" minlength="1" id="password" name="password" class="form-control">
+            </div>
+            <div class="form-group">
+                <small class="text-muted"><a>Forgot your password?</a></small>
+            </div>
+            <button type="submit" class="btn btn-success" id="login-register-button" type="button">Sign In</button>
+        </form>
+    </div>
   </div>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- At the bottom for speed, dont argue with THE_JAKE -->
-    <script defer src="js/jquery.min.js"></script>
-    <script defer src="js/tether.min.js"></script>
-    <script defer src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script defer src="js/holder.min.js"></script>
+    <script async src="js/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script defer src="js/ie10-viewport-bug-workaround.js"></script>
-    <script defer src="js/minimal.js"></script>
-
+    <script async src="js/ie10-viewport-bug-workaround.js"></script>
+    <script async src="js/minimal.js"></script>
 </body>
 </html>
