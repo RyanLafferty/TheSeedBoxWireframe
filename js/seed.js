@@ -3,7 +3,7 @@ $("#line").hide();
 
 function ChangeDataType(selected)
 {
-    alert(selected.value);
+    //alert(selected.value);
 }
 
 function ChangeDisplayType(selected)
