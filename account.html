@@ -55,10 +55,34 @@
 
         <!-- Effective Body Starts here -->
         <div class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 main">
+        <h1>Account Information</h1>
         <!--   useful for faking the graphs and anaylitics -->
-
-          <p> PUT ACCOUNT STUFF HERE </p>
-
+            <form id="submitinfo" method="post" action="account.html">
+                <table cellpadding=2>
+                    <tr>
+                        <td>First Name<input class="form-control" type="text" value="Tester" id="firstname"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name<input class="form-control" type="text" value="McTesterson" id="lastname"></td>
+                    </tr>
+                    <tr>
+                        <td>Email<input class="form-control" type="email" value="iamatester101@gmail.com" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth<input class="form-control" type="date" value="1985-08-19" id="dob"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="exampleSelect1">Theme</label>
+                            <select class="form-control" id="exampleSelect1">
+                                <option>Normal</option>
+                                <option>Simple</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr><td><button type="submit" class="btn btn-success">Update Information</button></td></tr>
+                </table>
+            </form>
         </div>
         <!-- Effective Body Endz here -->
       </div>
