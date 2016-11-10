@@ -61,24 +61,26 @@
         <div class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 main">
         <!--   useful for faking the graphs and anaylitics -->
 
-          <p> PUT VISUALIZATION HERE </p>
+        <!-- VISUALIZATION STUFF GOES HERE   -->
           <form>
-  <div class="form-group">
-
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="select-type-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Data Type
-        </button>
-        <div class="dropdown-menu" aria-labelledby="select-type-drop">
-          <a class="dropdown-item"> 1</a>
-          <a class="dropdown-item"> 2</a>
-          <a class="dropdown-item"> 3</a>
-        </div>
-
-      </div>
-      <div>
-  </div>
-</form>
+              <div class="form-group">
+                  <label for="data-type-select">Data Type</label>
+                  <select class="form-control" id="data-type-select">
+                      <option>Customer Savings</option>
+                      <option>Fruits & Vegetables</option>
+                  </select>
+                  <br>
+                  <input type="date" class="form-control" placeholder="Start Date">
+                  <br>
+                  <input type="date" class="form-control" placeholder="End Date">
+                  <br>
+                  <label for="display-type-select">Display Type</label>
+                  <select class="form-control" id="display-type-select">
+                      <option>Table</option>
+                      <option>Bar Graph</option>
+                      <option>Line Graph</option>
+                  </select>
+          </form>
 
         </div>
         <!-- Effective Body Endz here -->
