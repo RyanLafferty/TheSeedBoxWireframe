@@ -2,6 +2,16 @@
  * Base structure
  */
 
+/* Center login page horizontally and vertically */
+
+.login {
+    margin: 0;
+    position: absolute;
+    top: 46%;            /* note less than 50% because body is offset down by 50px */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
