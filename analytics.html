@@ -53,15 +53,13 @@
           </ul>
         </div>
         <!-- Navbar stuff ends -->
+
         <!-- Effective Body Starts here -->
         <div class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 main">
-        <!--   useful for faking the graphs and anaylitics -->
-
-        <!-- VISUALIZATION STUFF GOES HERE   -->
           <form>
               <div class="form-group">
                   <label for="data-type-select">Data Type</label>
-                  <select class="form-control" id="data-type-select">
+                  <select class="form-control" id="data-type-select" onchange="ChangeDataType(this)">
                       <option>Customer Savings</option>
                       <option>Fruits & Vegetables</option>
                   </select>
@@ -75,7 +73,7 @@
               </div>
               <div class="form-group">
               <label for="display-type-select">Display Type</label>
-                  <select class="form-control" id="display-type-select">
+                  <select class="form-control" id="display-type-select" onchange="ChangeDisplayType(this)">
                       <option>Table</option>
                       <option>Bar Graph</option>
                       <option>Line Graph</option>
