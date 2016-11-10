@@ -57,40 +57,69 @@
         <!-- end side Navbar -->
 
         <div class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 main">
-        <!--   useful for faking the graphs and anaylitics -->
+		  <!--To display data, select a spreadsheet from the dropdown below.-->
 
           <form>
           <div class="form-group">
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="select-spreadsheet-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select a spreadsheet
-                </button>
-                <div class="dropdown-menu" aria-labelledby="select-spreadsheet-btn">
-                  <a class="dropdown-item">Spreadsheet 1</a>
-                  <a class="dropdown-item">Spreadsheet 2</a>
-                  <a class="dropdown-item">Spreadsheet 3</a>
-                </div>
-                <button type="button" class="btn btn-secondary" id="download-btn">Download</button>
-                <button type="button" class="btn btn-secondary" id="upload-excel-btn">Upload Excel</button>
-              </div>      
-              <div>
+	    	  <label for="dropdown" style="display:block;font-size:.7rem">(Select a spreadsheet to have it automatically displayed)</label>
+
+			  <select class="form-control" id="spreadsheet-select" style="display:inline-block;width:auto;">
+				  <option value="" disabled selected>Select a spreadsheet</option>
+				  <option>Spreadsheet 1</option>
+				  <option>Spreadsheet 2</option>
+				  <option>Spreadsheet 3</option>
+			  </select>
+
+                <a class="btn btn-secondary" id="download-btn" href="" download>Download</a>
+				<label class="pull-right btn btn-secondary btn-file">
+					 Upload Excel
+					 <input id="file-excel" type="file" style="display: none;">
+				</label>
+
+			  <table class="table" style="display:none">
+				<thead>
+				  <tr>
+					<th>#</th>
+					<th>Column 1</th>
+					<th>Column 2</th>
+					<th>Column 3</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th scope="row">1</th>
+					<td>Value</td>
+					<td>Value</td>
+					<td>Value</td>
+				  </tr>
+				  <tr>
+					<th scope="row">2</th>
+					<td>Value</td>
+					<td>Value</td>
+					<td>Value</td>
+				  </tr>
+				  <tr>
+					<th scope="row">3</th>
+					<td>Value</td>
+					<td>Value</td>
+					<td>Value</td>
+				  </tr>
+				  <tr>
+					<th scope="row">4</th>
+					<td>Value</td>
+					<td>Value</td>
+					<td>Value</td>
+				  </tr>
+				</tbody>
+			  </table>
+
+<!--              <div>jk
                   <h6>
                       Database
                       <button type="button" class="btn btn-secondary" id="download-database-btn">Download Database Backup</button>
                   </h6>
               </div>
-              <div>
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="select-spreadsheet-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Tables
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="select-spreadsheet-btn">
-                      <a class="dropdown-item">???</a>
-                      <a class="dropdown-item">???</a>
-                      <a class="dropdown-item">???</a>
-                    </div>
-                  </div>
-              </div>
+-->
             </div>
         </form>
         </div>
@@ -107,5 +136,20 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script async src="js/ie10-viewport-bug-workaround.js"></script>
     <script async src="js/minimal.js"></script>
+
+    <script>
+
+      $(document).ready(function() {
+		  $("select").change(function() {
+			$('.table').show();
+		  });
+
+		  document.getElementById("file-excel").onchange = function(e) { 
+		  	alert("File uploaded successfully");
+		  };
+	
+      });
+	</script>
+
 </body>
 </html>
