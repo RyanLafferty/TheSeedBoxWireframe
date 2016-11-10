@@ -73,6 +73,14 @@ body {
   }
 }
 
+.submit-green {
+  background-color: #77A538; 
+}
+
+.submit-green:hover {
+  background-color: #61852E; 
+}
+
 /* Sidebar navigation */
 .nav-sidebar {
   margin-right: -21px; /* 20px padding + 1px border */
