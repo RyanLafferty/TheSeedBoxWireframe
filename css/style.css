@@ -4,6 +4,20 @@
 
 /* Center login page horizontally and vertically */
 
+
+.inline-img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-left: 1px;
+}
+
 .login {
     margin: 0;
     position: absolute;
