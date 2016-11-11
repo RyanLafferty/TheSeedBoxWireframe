@@ -63,14 +63,14 @@
           <div class="form-group">
 	    	  <label for="dropdown" style="display:block;font-size:.7rem">(Select a spreadsheet to have it automatically displayed)</label>
 
-			  <select class="form-control" id="spreadsheet-select" style="display:inline-block;width:auto;">
+			  <select class="form-control" id="spreadsheet-select" style="display:inline-block;width:auto;" onchange="$('#file-excel:not([disabled])')">
 				  <option value="" disabled selected>Select a spreadsheet</option>
 				  <option>Spreadsheet 1</option>
 				  <option>Spreadsheet 2</option>
 				  <option>Spreadsheet 3</option>
 			  </select>
 
-                <a class="btn btn-secondary submit-green" id="download-btn" href="res/images/table.jpg" download>Download Spreadsheet</a>
+                <a class="btn btn-secondary submit-green" id="download-btn" href="res/images/table.jpg" download disabled>Download Spreadsheet</a>
 				<label class="pull-right btn btn-secondary btn-file submit-green">
 					 Upload Spreadsheet
 					 <input id="file-excel" type="file" style="display: none;">
