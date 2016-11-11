@@ -75,10 +75,12 @@ body {
 
 .submit-green {
   background-color: #77A538; 
+  color: #fff;
 }
 
 .submit-green:hover {
   background-color: #61852E; 
+  color: #fff;
 }
 
 .link-green {
