@@ -4,6 +4,10 @@
 
 /* Center login page horizontally and vertically */
 
+.required-asterisk:after {
+  content:" *";
+  color:red;
+}
 
 .inline-img {
     display: block;
