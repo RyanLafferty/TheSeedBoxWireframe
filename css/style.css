@@ -74,13 +74,13 @@ body {
 }
 
 .submit-green {
-  background-color: #77A538; 
-  color: #fff;
+  background-color: #77A538 !important; 
+  color: #fff !important;
 }
 
 .submit-green:hover {
-  background-color: #61852E; 
-  color: #fff;
+  background-color: #61852E !important; 
+  color: #fff !important;
 }
 
 .link-green {
